@@ -8,11 +8,12 @@ class Routes {
   static String normalPage = '/normalPage';
   static String routingReference = '/routingReference';
   static String login = '/login';
-  static void configureRoutes(Router router) {
+  static void configureRoutes(FluroRouter router) {
     router.notFoundHandler = new Handler(
       handlerFunc: (BuildContext context, Map<String, List<String>> params) {
         print('ERROR====>ROUTE WAS NOT FONUND!!!'); // 找不到路由，跳转404页面
         print('找不到路由，404');
+        return Text('找不到路由，404');
       },
     );
 

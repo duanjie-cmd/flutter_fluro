@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //-----------------路由主要代码start
-    final router = Router();
+    final router = FluroRouter();
     Routes.configureRoutes(router);
     Application.router = router;
     //-----------------路由主要代码end
